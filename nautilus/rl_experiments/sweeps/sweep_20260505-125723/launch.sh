@@ -18,9 +18,10 @@
 # Generated: 2026-05-05T12:57:23.840241Z
 
 # --- Site environment (edit for your cluster) ---
-export HTTPS_PROXY=http://proxy/
-module load python
-conda activate loco-mujoco
+# Add `module load <X>` / `source <site-init>` lines here if your cluster
+# needs them. The venv below is self-contained, so no conda activation is
+# required by default.
+export HTTPS_PROXY=${HTTPS_PROXY:-}
 export WANDB_API_KEY=${WANDB_API_KEY:-}
 
 # Resolve repo root from this script's location so the launch file is portable
