@@ -113,6 +113,18 @@ def main(cfg: DictConfig):
             "tracker_len": cfg.get("tracker_len", 100),
             "hidden_dims": cfg.get("hidden_dims", [256, 256]),
             "activation": cfg.get("activation", "tanh"),
+            # Network knobs the agent classes read via cfg.algo.get(...).
+            # If the user's yaml puts them at top level (which our default
+            # parallel.yaml does), forward them into cfg.algo so the agent
+            # picks them up instead of falling back to the hard-coded default.
+            "init_log_std":   cfg.get("init_log_std", 0.0),
+            "use_obs_rms":    cfg.get("use_obs_rms", True),
+            "learnable_std":  cfg.get("learnable_std", True),
+            "obs_norm":       cfg.get("obs_norm", True),
+            "value_norm":     cfg.get("value_norm", True),
+            "handle_timeout": cfg.get("handle_timeout", True),
+            "no_tgt_actor":   cfg.get("no_tgt_actor", False),
+            "use_gae":        cfg.get("use_gae", True),
         })
 
     cfg.num_envs = int(cfg.get("n_envs", cfg.get("num_envs", 8)))

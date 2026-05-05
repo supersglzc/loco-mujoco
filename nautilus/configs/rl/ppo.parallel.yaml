@@ -13,7 +13,7 @@ algo: ppo
 task:
 
 # ---- Sim / device ----
-num_envs: 4096            # GPU-batched envs (IsaacGym / IsaacLab / ManiSkill 3 state)
+num_envs: 2048            # matches reference examples/training_examples/jax_rl/conf.yaml
 n_envs: ${.num_envs}      # alias used by SB3 path
 device: cuda
 sim_device: ${.device}
@@ -21,7 +21,7 @@ rl_device: ${.device}
 graphics_device_id: 0
 seed: 42
 gpu_sim: true
-total_timesteps: 50_000_000
+total_timesteps: 100_000_000     # = 10e7, mirrors reference total_timesteps
 max_step: ${.total_timesteps}   # custom_torch alias
 wandb:
 
@@ -55,11 +55,14 @@ ent_coef: 0.0
 vf_coef: 0.5
 max_grad_norm: 0.5        # reference uses 0.5, was 1.0 here
 learning_rate: 1.0e-4     # reference uses 1e-4, was 3e-4 here
+anneal_lr: false          # reference's _get_optimizer respects this flag (linear decay over num_updates)
+weight_decay: 0.0         # reference passes this to optax.adamw
 
-# ---- Policy network (custom_jax reads hidden_dims + init_log_std + use_obs_rms) ----
+# ---- Policy network (custom_jax reads hidden_dims + init_log_std + use_obs_rms + learnable_std) ----
 hidden_dims: [512, 256]
 activation: tanh
 init_log_std: -0.223      # = log(0.8); reference uses init_std=0.8
+learnable_std: true       # if false, log_std is wrapped in stop_gradient (fixed std)
 use_obs_rms: true          # in-network RunningMeanStd obs normalization; set false to disable
 
 # ---- ActorCriticBase shared ----
