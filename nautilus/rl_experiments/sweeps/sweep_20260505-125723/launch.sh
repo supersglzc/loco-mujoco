@@ -25,11 +25,10 @@ module load python
 export HTTPS_PROXY=${HTTPS_PROXY:-}
 export WANDB_API_KEY=${WANDB_API_KEY:-}
 
-# Resolve repo root from this script's location so the launch file is portable
-# across hosts (no hardcoded absolute paths). Layout assumed:
-#   <repo>/nautilus/rl_experiments/sweeps/<sweep_id>/launch.sh
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-REPO_ROOT="$(cd "$SCRIPT_DIR/../../../.." && pwd)"
+# Repo path convention: $HOME/code/agentic/<repo-name>.
+# (sbatch copies the script to a spool dir, so $0-relative path resolution is
+# unreliable on SLURM — we hardcode the canonical clone location instead.)
+REPO_ROOT="$HOME/code/agentic/loco-mujoco"
 cd "$REPO_ROOT"
 
 # Activate uv venv if env-generator's uv backend was used (harmless otherwise).
