@@ -18,9 +18,10 @@
 # Generated: 2026-05-05T12:57:23.840241Z
 
 # --- Site environment (edit for your cluster) ---
-# Add `module load <X>` / `source <site-init>` lines here if your cluster
-# needs them. The venv below is self-contained, so no conda activation is
-# required by default.
+# The venv below is self-contained (uv-managed Python), but `module load python`
+# is needed on most SLURM sites to put a Python on PATH so `.venv/bin/activate`
+# can find the right interpreter symlink target.
+module load python
 export HTTPS_PROXY=${HTTPS_PROXY:-}
 export WANDB_API_KEY=${WANDB_API_KEY:-}
 
