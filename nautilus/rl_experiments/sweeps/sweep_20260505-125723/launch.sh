@@ -31,8 +31,14 @@ export WANDB_API_KEY=${WANDB_API_KEY:-}
 REPO_ROOT="$HOME/code/agentic/loco-mujoco"
 cd "$REPO_ROOT"
 
-# Activate uv venv if env-generator's uv backend was used (harmless otherwise).
-[ -f .venv/bin/activate ] && source .venv/bin/activate
+# Activate the uv venv created by `bash nautilus/setup_uv.sh`.
+if [ ! -f .venv/bin/activate ]; then
+    echo "[ERROR] .venv not found at $REPO_ROOT/.venv" >&2
+    echo "        Run this once on the cluster before sbatch:" >&2
+    echo "          cd $REPO_ROOT && bash nautilus/setup_uv.sh" >&2
+    exit 1
+fi
+source .venv/bin/activate
 
 # --- Trial table (parallel arrays; index = $SLURM_ARRAY_TASK_ID) ---
 TRIAL_IDS=(
