@@ -1,0 +1,34 @@
+{
+  "primary_install_strategy": "uv-pip-editable",
+  "system_apt_packages": ["libegl1", "libosmesa6", "libgl1", "libglib2.0-0"],
+  "third_party_clones": [],
+  "installation_steps": [
+    {
+      "kind": "apt_install",
+      "pkgs": ["libegl1", "libosmesa6", "libgl1", "libglib2.0-0"]
+    },
+    {
+      "kind": "uv_pip_install",
+      "args": ["-e", "."]
+    },
+    {
+      "kind": "uv_pip_install",
+      "args": ["jax[cuda12]"]
+    }
+  ],
+  "post_install_hooks": [],
+  "runtime_mounts": [],
+  "runtime_env_vars": [],
+  "evidence": {
+    "readme_quotes": [
+      "Clone this repo and do an editable installation:\n```bash\ncd loco-mujoco\npip install -e .\n```",
+      "By default, both will install the CPU-version of Jax. If you want to use Jax on the GPU, you need to install the following:\n```bash\npip install jax[\"cuda12\"]\n```"
+    ],
+    "ambiguities": [
+      "Python version: pyproject.toml requires >=3.10; CLAUDE.md notes CI uses Python 3.11; probe defaulted to 3.10 — using 3.10 as the lower-bound minimum.",
+      "CUDA version: no torch+cuXXX pin found; CUDA detected from host driver (13.0). JAX with cuda12 extras is the GPU runtime — specifying jax[cuda12] per README.",
+      "apt packages: needs_render_libs quirk detected (mujoco/gymnasium in deps); auto-injected libegl1 libosmesa6 libgl1 libglib2.0-0 per quirks mapping.",
+      "AMASS / SMPL optional extras (pip install -e '.[smpl]') deliberately excluded — requires license agreement and manual setup; documented in loco_mujoco/smpl/README.MD."
+    ]
+  }
+}

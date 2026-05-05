@@ -1,0 +1,8 @@
+{
+  "trial_id": "001_sac_UnitreeGo2_a4c838eb",
+  "trial_config": {"task":"UnitreeGo2","algorithm":"sac","seed":1,"total_timesteps":2000000},
+  "exit_code": 0,
+  "train_output_dir": "/home/steven/code/agentic/loco-mujoco/nautilus/outputs/sac_UnitreeGo2_20260504-234443",
+  "checkpoint": "/home/steven/code/agentic/loco-mujoco/nautilus/outputs/sac_UnitreeGo2_20260504-234443/AgentSAC_saved.pkl",
+  "wall_time_sec": 85
+}

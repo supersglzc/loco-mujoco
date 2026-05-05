@@ -1,0 +1,6 @@
+{
+  "task": "UnitreeGo2",
+  "algorithm": "sac",
+  "seed": 1,
+  "total_timesteps": 2000000
+}

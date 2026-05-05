@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "benchmark": {
+    "name": "loco-mujoco",
+    "repo_path": "/home/steven/code/agentic/loco-mujoco",
+    "category": "rl"
+  },
+  "tasks": [{"id": "UnitreeH1", "make": "gymnasium.make", "max_episode_steps": 1000, "success_metric": null, "reward_metric": "episode_return"}, {"id": "UnitreeH1v2", "make": "gymnasium.make", "max_episode_steps": 1000, "success_metric": null, "reward_metric": "episode_return"}, {"id": "UnitreeG1", "make": "gymnasium.make", "max_episode_steps": 1000, "success_metric": null, "reward_metric": "episode_return"}, {"id": "Atlas", "make": "gymnasium.make", "max_episode_steps": 1000, "success_metric": null, "reward_metric": "episode_return"}, {"id": "Talos", "make": "gymnasium.make", "max_episode_steps": 1000, "success_metric": null, "reward_metric": "episode_return"}, {"id": "AnymalC", "make": "gymnasium.make", "max_episode_steps": 1000, "success_metric": null, "reward_metric": "episode_return"}, {"id": "UnitreeGo2", "make": "gymnasium.make", "max_episode_steps": 1000, "success_metric": null, "reward_metric": "episode_return"}, {"id": "UnitreeA1", "make": "gymnasium.make", "max_episode_steps": 1000, "success_metric": null, "reward_metric": "episode_return"}],
+  "algorithm_source": {
+    "kind": "custom_jax",
+    "slug": "custom_jax",
+    "package": "",
+    "parallel": true
+  },
+  "scripts_dir": "nautilus/scripts/rl/custom_jax",
+  "algorithms": {
+    "ppo": {"class": "PPO", "config": "nautilus/configs/rl/ppo.parallel.yaml"},
+    "sac": {"class": "SAC", "config": "nautilus/configs/rl/sac.parallel.yaml"},
+    "td3": {"class": "TD3", "config": "nautilus/configs/rl/td3.parallel.yaml"}
+  },
+  "logging": {
+    "wandb": {
+      "enabled": false,
+      "project": "nautilus-rl",
+      "entity": null,
+      "mode": "disabled"
+    },
+    "local_dir": "nautilus/rl_experiments"
+  },
+  "selection_metric": {
+    "primary": "success_rate",
+    "secondary": "eval_return_mean",
+    "tertiary": "sample_efficiency",
+    "stability_weight": 0.05
+  },
+  "training_defaults": {
+    "timesteps_per_trial": 100000,
+    "eval_episodes": 10,
+    "n_envs_cpu": 8,
+    "n_envs_gpu": 4096,
+    "seed": 42
+  }
+}

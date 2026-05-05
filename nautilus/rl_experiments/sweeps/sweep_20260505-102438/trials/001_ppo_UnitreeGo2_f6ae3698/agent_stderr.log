@@ -1,0 +1,51 @@
+INFO:2026-05-05 12:59:28,336:jax._src.xla_bridge:752: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home/steven/.netrc.
+wandb: Currently logged in as: supersglzc (supersglzc1) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.26.1
+wandb: Run data is saved locally in /home/steven/code/agentic/loco-mujoco/nautilus/outputs/ppo_UnitreeGo2_20260505-125928/wandb/run-20260505_125929-cp7raqki
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run ppo_UnitreeGo2_20260505-125928
+wandb: ⭐️ View project at https://wandb.ai/supersglzc1/ppo-tricks-sweep-go2
+wandb: 🚀 View run at https://wandb.ai/supersglzc1/ppo-tricks-sweep-go2/runs/cp7raqki
+2026-05-05 12:59:39.114656: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-05-05 12:59:49.859961: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-05-05 13:18:09.357117: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-05-05 13:18:09.357154: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+/usr/lib/python3.10/subprocess.py:1796: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = _posixsubprocess.fork_exec(
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+wandb: uploading console lines 102-105; updating run metadata
+wandb: uploading media/videos/render/video_10035200_859a6ed80b39c4e47410.mp4; uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading media/videos/render/video_10035200_859a6ed80b39c4e47410.mp4
+wandb: 
+wandb: Run history:
+wandb: reward/total/episodic_return_mean ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▅▅▅▅▆▆▆▇███
+wandb:                   train/approx_kl ▁▄▄▆▆▇█▇▆▆▆▆▆▆▅▅▅▅▅▅▄▅▅▅▅▅▅▅▆▆▆▇▇▇▇▇████
+wandb:               train/clip_fraction ▁▂▄▅▆▆▆▇▆▆▅▅▅▆▆▄▄▄▄▄▄▄▅▅▅▅▅▅▅▅▇▆▇▆▆▇█▇██
+wandb:                     train/entropy █████▇▇▇▇▇▇▆▆▆▆▆▅▅▅▅▄▄▄▄▃▃▃▃▃▃▂▂▂▂▂▁▁▁▁▁
+wandb:              train/episode_length ▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▃▃▄▅▅▅▅▅▅▅▅▆▆▆▆▆▆▆▇▇▇██
+wandb:                 train/loss/policy ▅▆███▆▆▅▄▄▃▁▁▁▂▁▂▃▅▄▄▅▅▅▆▆▆▇▆▆▇▇█▆▇▆▇▇▇▇
+wandb:                  train/loss/value ▃▂▂▂▃▃▄▅▇███▇▆▆▄▃▃▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:                            config name: ppo
+wandb: algo:
+wandb:   na...
+wandb:             final/checkpoint_path /home/steven/code/ag...
+wandb: reward/total/episodic_return_mean 418.90277
+wandb:                   train/approx_kl 0.00769
+wandb:               train/clip_fraction 0.10342
+wandb:                     train/entropy 6.60957
+wandb:              train/episode_length 494.88
+wandb:                 train/loss/policy -0.00531
+wandb:                  train/loss/value 0.01365
+wandb: 
+wandb: 🚀 View run ppo_UnitreeGo2_20260505-125928 at: https://wandb.ai/supersglzc1/ppo-tricks-sweep-go2/runs/cp7raqki
+wandb: ⭐️ View project at: https://wandb.ai/supersglzc1/ppo-tricks-sweep-go2
+wandb: Synced 5 W&B file(s), 1 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./nautilus/outputs/ppo_UnitreeGo2_20260505-125928/wandb/run-20260505_125929-cp7raqki/logs
+Exception ignored in: <function GLContext.__del__ at 0x7eb646995870>
+Traceback (most recent call last):
+  File "/home/steven/code/agentic/loco-mujoco/.venv/lib/python3.10/site-packages/mujoco/glfw/__init__.py", line 41, in __del__
+  File "/home/steven/code/agentic/loco-mujoco/.venv/lib/python3.10/site-packages/mujoco/glfw/__init__.py", line 35, in free
+TypeError: 'NoneType' object is not callable

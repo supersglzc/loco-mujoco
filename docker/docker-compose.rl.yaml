@@ -1,0 +1,68 @@
+# loco-mujoco — RL training compose overlay.
+#
+# Layered on top of docker/Dockerfile (built by env-generator + extended by
+# rl-integration-generator with stable-baselines3[extra] + wandb). Mounts the
+# host's W&B credentials and a writable cache for checkpoints / videos.
+#
+# Usage:
+#   docker compose -f docker/docker-compose.rl.yaml run --rm rl \
+#       python nautilus/scripts/rl/train.py algo=ppo task=<task_id>
+#   docker compose -f docker/docker-compose.rl.yaml run --rm rl \
+#       python nautilus/scripts/rl/eval.py  --algo ppo --task <task_id> --trial <trial_id>
+
+services:
+  rl:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: ${IMAGE:-yufengjin/loco-mujoco:local}
+    container_name: loco-mujoco-rl
+    tty: true
+    stdin_open: true
+
+    environment:
+      - PYTHONUNBUFFERED=1
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+      # X11 forwarding ON by default — render_policy.py and on-screen viewers
+      # work out of the box. Run `xhost +local:docker` once on the host.
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - MPLBACKEND=Agg
+      # W&B — pass through from host. Set to disabled mode by overriding via
+      # CLI: `wandb=null` to nautilus/scripts/rl/train.py.
+      - WANDB_API_KEY=${WANDB_API_KEY:-}
+      - WANDB_MODE=${WANDB_MODE:-online}
+
+    volumes:
+      - ..:/workspace/loco-mujoco
+      - ${HOME}/.cache/huggingface:/root/.cache/huggingface
+      - ${HOME}/.netrc:/root/.netrc:ro          # wandb auth fallback
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ${HOME}/.Xauthority:/root/.Xauthority:rw
+        — populated by rl-integration-generator only when
+      # algorithm_source=local-implementation AND the user provided a path. For
+      # `path` source it inserts a line like:
+      #   - {{LOCAL_IMPL_PATH_HOST}}:/workspace/external/{{LOCAL_IMPL_SLUG}}
+      # For `url` source no extra mount is needed (pip install git+ in the Dockerfile).
+      # Persist tuning artifacts on host so they survive container teardown.
+      # The local_dir from nautilus/rl-suite-spec.json is `nautilus/rl_experiments`,
+      # which is already inside the bind-mounted workspace.
+
+    network_mode: host
+    ipc: host
+    pid: host
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu, compute, utility]
+
+    ulimits:
+      nofile: { soft: 65536, hard: 65536 }
+      nproc: 65536
+      memlock: -1
+      stack: 67108864

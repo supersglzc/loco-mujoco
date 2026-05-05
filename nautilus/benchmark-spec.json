@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-05-04T17:06:48+00:00",
+  "benchmark_name": "loco-mujoco",
+  "category": "rl",
+  "language": "jax",
+  "gpu_sim": true,
+  "tasks": [
+    {
+      "id": "UnitreeH1",
+      "max_episode_steps": 1000,
+      "success_metric": null,
+      "reward_implemented": true,
+      "reward_metric": "episode_return"
+    },
+    {
+      "id": "UnitreeH1v2",
+      "max_episode_steps": 1000,
+      "success_metric": null,
+      "reward_implemented": true,
+      "reward_metric": "episode_return"
+    },
+    {
+      "id": "UnitreeG1",
+      "max_episode_steps": 1000,
+      "success_metric": null,
+      "reward_implemented": true,
+      "reward_metric": "episode_return"
+    },
+    {
+      "id": "Atlas",
+      "max_episode_steps": 1000,
+      "success_metric": null,
+      "reward_implemented": true,
+      "reward_metric": "episode_return"
+    },
+    {
+      "id": "Talos",
+      "max_episode_steps": 1000,
+      "success_metric": null,
+      "reward_implemented": true,
+      "reward_metric": "episode_return"
+    },
+    {
+      "id": "AnymalC",
+      "max_episode_steps": 1000,
+      "success_metric": null,
+      "reward_implemented": true,
+      "reward_metric": "episode_return"
+    },
+    {
+      "id": "UnitreeGo2",
+      "max_episode_steps": 1000,
+      "success_metric": null,
+      "reward_implemented": true,
+      "reward_metric": "episode_return"
+    },
+    {
+      "id": "UnitreeA1",
+      "max_episode_steps": 1000,
+      "success_metric": null,
+      "reward_implemented": true,
+      "reward_metric": "episode_return"
+    }
+  ]
+}

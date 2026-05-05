@@ -1,0 +1,17 @@
+{
+  "trial_id": "001_ppo_UnitreeGo2_f6ae3698",
+  "trial_config": {
+    "task": "UnitreeGo2",
+    "algorithm": "ppo",
+    "seed": 1,
+    "total_timesteps": 10000000
+  },
+  "tricks_applied": [
+    "obs_rms_jax",
+    "reward_norm_jax"
+  ],
+  "exit_code": 0,
+  "train_output_dir": "/home/steven/code/agentic/loco-mujoco/nautilus/outputs/ppo_UnitreeGo2_20260505-125928",
+  "checkpoint": "/home/steven/code/agentic/loco-mujoco/nautilus/outputs/ppo_UnitreeGo2_20260505-125928/AgentPPO_saved.pkl",
+  "wall_time_sec": 1174
+}

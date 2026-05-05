@@ -1,0 +1,73 @@
+{
+  "sweep_id": "sweep_20260505-102438",
+  "created_at": "2026-05-05T10:24:38.689885+00:00",
+  "parsed_args": {
+    "task": [
+      "UnitreeGo2"
+    ],
+    "algorithm": [
+      "ppo"
+    ],
+    "seed": [
+      0,
+      1
+    ],
+    "total_timesteps": [
+      10000000
+    ]
+  },
+  "tricks_applied": [
+    "obs_rms_jax",
+    "reward_norm_jax"
+  ],
+  "trial_configs": [
+    {
+      "task": "UnitreeGo2",
+      "algorithm": "ppo",
+      "seed": 0,
+      "total_timesteps": 10000000
+    },
+    {
+      "task": "UnitreeGo2",
+      "algorithm": "ppo",
+      "seed": 1,
+      "total_timesteps": 10000000
+    }
+  ],
+  "trials": [
+    {
+      "trial_id": "000_ppo_UnitreeGo2_cc343da7",
+      "trial_config": {
+        "task": "UnitreeGo2",
+        "algorithm": "ppo",
+        "seed": 0,
+        "total_timesteps": 10000000
+      },
+      "tricks_applied": [
+        "obs_rms_jax",
+        "reward_norm_jax"
+      ],
+      "exit_code": 0,
+      "train_output_dir": "/home/steven/code/agentic/loco-mujoco/nautilus/outputs/ppo_UnitreeGo2_20260505-123954",
+      "checkpoint": "/home/steven/code/agentic/loco-mujoco/nautilus/outputs/ppo_UnitreeGo2_20260505-123954/AgentPPO_saved.pkl",
+      "wall_time_sec": 1174
+    },
+    {
+      "trial_id": "001_ppo_UnitreeGo2_f6ae3698",
+      "trial_config": {
+        "task": "UnitreeGo2",
+        "algorithm": "ppo",
+        "seed": 1,
+        "total_timesteps": 10000000
+      },
+      "tricks_applied": [
+        "obs_rms_jax",
+        "reward_norm_jax"
+      ],
+      "exit_code": 0,
+      "train_output_dir": "/home/steven/code/agentic/loco-mujoco/nautilus/outputs/ppo_UnitreeGo2_20260505-125928",
+      "checkpoint": "/home/steven/code/agentic/loco-mujoco/nautilus/outputs/ppo_UnitreeGo2_20260505-125928/AgentPPO_saved.pkl",
+      "wall_time_sec": 1174
+    }
+  ]
+}
