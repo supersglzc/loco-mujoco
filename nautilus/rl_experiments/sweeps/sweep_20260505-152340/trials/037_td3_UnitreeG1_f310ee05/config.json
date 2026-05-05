@@ -1,0 +1,7 @@
+{
+  "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+  "algorithm": "td3",
+  "seed": 0,
+  "task": "UnitreeG1",
+  "wandb": "nautilus-rl-loco-mujoco-multitask"
+}

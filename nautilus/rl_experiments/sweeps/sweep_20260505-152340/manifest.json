@@ -1,0 +1,970 @@
+{
+  "sweep_id": "sweep_20260505-152340",
+  "created_at": "2026-05-05T15:23:40.147713+00:00Z",
+  "parsed_args": {
+    "task": [
+      "UnitreeH1",
+      "UnitreeG1",
+      "Atlas",
+      "UnitreeGo2",
+      "AnymalC",
+      "UnitreeA1"
+    ],
+    "algorithm": [
+      "ppo",
+      "sac",
+      "td3"
+    ],
+    "seed": [
+      0,
+      1,
+      2
+    ],
+    "++env_params": [
+      "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}"
+    ],
+    "wandb": [
+      "nautilus-rl-loco-mujoco-multitask"
+    ]
+  },
+  "mode": "cluster",
+  "trial_configs": [
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 0,
+      "task": "UnitreeH1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 0,
+      "task": "UnitreeG1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 0,
+      "task": "Atlas",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 0,
+      "task": "UnitreeGo2",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 0,
+      "task": "AnymalC",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 0,
+      "task": "UnitreeA1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 1,
+      "task": "UnitreeH1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 1,
+      "task": "UnitreeG1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 1,
+      "task": "Atlas",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 1,
+      "task": "UnitreeGo2",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 1,
+      "task": "AnymalC",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 1,
+      "task": "UnitreeA1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 2,
+      "task": "UnitreeH1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 2,
+      "task": "UnitreeG1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 2,
+      "task": "Atlas",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 2,
+      "task": "UnitreeGo2",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 2,
+      "task": "AnymalC",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "ppo",
+      "seed": 2,
+      "task": "UnitreeA1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 0,
+      "task": "UnitreeH1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 0,
+      "task": "UnitreeG1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 0,
+      "task": "Atlas",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 0,
+      "task": "UnitreeGo2",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 0,
+      "task": "AnymalC",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 0,
+      "task": "UnitreeA1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 1,
+      "task": "UnitreeH1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 1,
+      "task": "UnitreeG1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 1,
+      "task": "Atlas",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 1,
+      "task": "UnitreeGo2",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 1,
+      "task": "AnymalC",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 1,
+      "task": "UnitreeA1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 2,
+      "task": "UnitreeH1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 2,
+      "task": "UnitreeG1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 2,
+      "task": "Atlas",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 2,
+      "task": "UnitreeGo2",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 2,
+      "task": "AnymalC",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "sac",
+      "seed": 2,
+      "task": "UnitreeA1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 0,
+      "task": "UnitreeH1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 0,
+      "task": "UnitreeG1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 0,
+      "task": "Atlas",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 0,
+      "task": "UnitreeGo2",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 0,
+      "task": "AnymalC",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 0,
+      "task": "UnitreeA1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 1,
+      "task": "UnitreeH1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 1,
+      "task": "UnitreeG1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 1,
+      "task": "Atlas",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 1,
+      "task": "UnitreeGo2",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 1,
+      "task": "AnymalC",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 1,
+      "task": "UnitreeA1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 2,
+      "task": "UnitreeH1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 2,
+      "task": "UnitreeG1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 2,
+      "task": "Atlas",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 2,
+      "task": "UnitreeGo2",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 2,
+      "task": "AnymalC",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    },
+    {
+      "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+      "algorithm": "td3",
+      "seed": 2,
+      "task": "UnitreeA1",
+      "wandb": "nautilus-rl-loco-mujoco-multitask"
+    }
+  ],
+  "tricks_applied": [
+    "obs_rms_jax (all 3 algos)",
+    "reward_norm_jax (PPO only \u2014 SAC/TD3 set normalize_env=false)"
+  ],
+  "tasks": {
+    "humanoids": [
+      "UnitreeH1",
+      "UnitreeG1",
+      "Atlas"
+    ],
+    "quadrupeds": [
+      "UnitreeGo2",
+      "AnymalC",
+      "UnitreeA1"
+    ]
+  },
+  "launch_script": "nautilus/rl_experiments/sweeps/sweep_20260505-152340/launch.sh",
+  "trials": [
+    {
+      "trial_id": "000_ppo_UnitreeH1_8a749d25",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 0,
+        "task": "UnitreeH1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "001_ppo_UnitreeG1_c213c230",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 0,
+        "task": "UnitreeG1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "002_ppo_Atlas_d7d4989b",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 0,
+        "task": "Atlas",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "003_ppo_UnitreeGo2_ec6c917c",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 0,
+        "task": "UnitreeGo2",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "004_ppo_AnymalC_327ec590",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 0,
+        "task": "AnymalC",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "005_ppo_UnitreeA1_3d5e1aea",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 0,
+        "task": "UnitreeA1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "006_ppo_UnitreeH1_9e968be3",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 1,
+        "task": "UnitreeH1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "007_ppo_UnitreeG1_f8f8e5c6",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 1,
+        "task": "UnitreeG1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "008_ppo_Atlas_c40f160e",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 1,
+        "task": "Atlas",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "009_ppo_UnitreeGo2_59905d15",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 1,
+        "task": "UnitreeGo2",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "010_ppo_AnymalC_a859af96",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 1,
+        "task": "AnymalC",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "011_ppo_UnitreeA1_3ab17d94",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 1,
+        "task": "UnitreeA1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "012_ppo_UnitreeH1_cba0741b",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 2,
+        "task": "UnitreeH1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "013_ppo_UnitreeG1_45e51ea8",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 2,
+        "task": "UnitreeG1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "014_ppo_Atlas_2356a293",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 2,
+        "task": "Atlas",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "015_ppo_UnitreeGo2_20e25f0b",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 2,
+        "task": "UnitreeGo2",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "016_ppo_AnymalC_c7774ec4",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 2,
+        "task": "AnymalC",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "017_ppo_UnitreeA1_99b8b46c",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "ppo",
+        "seed": 2,
+        "task": "UnitreeA1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "018_sac_UnitreeH1_f13ee976",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 0,
+        "task": "UnitreeH1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "019_sac_UnitreeG1_e6362611",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 0,
+        "task": "UnitreeG1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "020_sac_Atlas_3e3ca521",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 0,
+        "task": "Atlas",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "021_sac_UnitreeGo2_7f29151c",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 0,
+        "task": "UnitreeGo2",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "022_sac_AnymalC_a7ebb133",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 0,
+        "task": "AnymalC",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "023_sac_UnitreeA1_e264ebc6",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 0,
+        "task": "UnitreeA1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "024_sac_UnitreeH1_aca7bc3a",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 1,
+        "task": "UnitreeH1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "025_sac_UnitreeG1_2b70f431",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 1,
+        "task": "UnitreeG1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "026_sac_Atlas_777ba0ae",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 1,
+        "task": "Atlas",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "027_sac_UnitreeGo2_33e195a0",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 1,
+        "task": "UnitreeGo2",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "028_sac_AnymalC_778ce2ed",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 1,
+        "task": "AnymalC",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "029_sac_UnitreeA1_ed6c15f1",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 1,
+        "task": "UnitreeA1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "030_sac_UnitreeH1_03efff74",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 2,
+        "task": "UnitreeH1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "031_sac_UnitreeG1_7dd815bd",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 2,
+        "task": "UnitreeG1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "032_sac_Atlas_7ed65b1b",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 2,
+        "task": "Atlas",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "033_sac_UnitreeGo2_1d6d7435",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 2,
+        "task": "UnitreeGo2",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "034_sac_AnymalC_1993c640",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 2,
+        "task": "AnymalC",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "035_sac_UnitreeA1_ee099976",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "sac",
+        "seed": 2,
+        "task": "UnitreeA1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "036_td3_UnitreeH1_042ee6c6",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 0,
+        "task": "UnitreeH1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "037_td3_UnitreeG1_f310ee05",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 0,
+        "task": "UnitreeG1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "038_td3_Atlas_b6671424",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 0,
+        "task": "Atlas",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "039_td3_UnitreeGo2_fcccde6c",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 0,
+        "task": "UnitreeGo2",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "040_td3_AnymalC_ff348a62",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 0,
+        "task": "AnymalC",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "041_td3_UnitreeA1_5d3af564",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 0,
+        "task": "UnitreeA1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "042_td3_UnitreeH1_c3df2cf7",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 1,
+        "task": "UnitreeH1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "043_td3_UnitreeG1_8c0e8e19",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 1,
+        "task": "UnitreeG1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "044_td3_Atlas_c4d5bfd9",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 1,
+        "task": "Atlas",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "045_td3_UnitreeGo2_24039550",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 1,
+        "task": "UnitreeGo2",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "046_td3_AnymalC_a2ccfb2e",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 1,
+        "task": "AnymalC",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "047_td3_UnitreeA1_0758959e",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 1,
+        "task": "UnitreeA1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "048_td3_UnitreeH1_89c4fb55",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 2,
+        "task": "UnitreeH1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "049_td3_UnitreeG1_7a68aa61",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 2,
+        "task": "UnitreeG1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "050_td3_Atlas_b3cfdf7c",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 2,
+        "task": "Atlas",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "051_td3_UnitreeGo2_3392992b",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 2,
+        "task": "UnitreeGo2",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "052_td3_AnymalC_c16ae310",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 2,
+        "task": "AnymalC",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    },
+    {
+      "trial_id": "053_td3_UnitreeA1_2f33a64e",
+      "trial_config": {
+        "++env_params": "{horizon:1000,terminal_state_type:HeightBasedTerminalStateHandler,goal_type:GoalRandomRootVelocity,goal_params:{visualize_goal:false},headless:true,reward_type:LocomotionReward,reward_params:{tracking_w_exp_xy:4.0,tracking_w_exp_yaw:4.0,tracking_w_sum_xy:2.0,tracking_w_sum_yaw:1.0,air_time_coeff:0.0,joint_acc_coeff:2e-05,air_time_max:0.5,joint_torque_coeff:2e-07,joint_position_limit_coeff:2.0,action_rate_coeff:0.1,symmetry_air_coeff:0.0,energy_coeff:5e-05}}",
+        "algorithm": "td3",
+        "seed": 2,
+        "task": "UnitreeA1",
+        "wandb": "nautilus-rl-loco-mujoco-multitask"
+      }
+    }
+  ]
+}

@@ -17,7 +17,7 @@ max_step: ${.total_timesteps}   # custom_torch alias
 wandb:
 
 # ---- Env construction (custom_jax: passed to RLFactory.make as **env_params) ----
-normalize_env: true              # NormalizeVecReward — off by default for SAC.
+normalize_env: false             # NormalizeVecReward — OFF for SAC (off-policy caveat below).
                                  # OFF-POLICY CAVEAT: when ON, replay buffer holds rewards from
                                  # different normalization regimes; can destabilize Q-learning.
                                  # Prefer cfg.algo.reward_scale for SAC reward scaling.
