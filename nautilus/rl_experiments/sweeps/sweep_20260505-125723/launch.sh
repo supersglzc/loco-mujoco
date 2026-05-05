@@ -22,7 +22,7 @@
 # is needed on most SLURM sites to put a Python on PATH so `.venv/bin/activate`
 # can find the right interpreter symlink target.
 module load python
-export HTTPS_PROXY=${HTTPS_PROXY:-}
+export HTTPS_PROXY=http://proxy/
 export WANDB_API_KEY=${WANDB_API_KEY:-}
 
 # Repo path convention: $HOME/code/agentic/<repo-name>.
