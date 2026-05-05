@@ -128,10 +128,16 @@ def main(cfg: DictConfig):
 
     ts = datetime.now().strftime("%Y%m%d-%H%M%S")
     task_slug = str(task).replace('/', '_')
-    trial_id = f"{str(cfg.algo.name).lower()}_{task_slug}_{ts}"
+    seed = int(cfg.get("seed", 42))
+    algo_slug = str(cfg.algo.name).lower()
+    # Filesystem dir keeps the timestamp so parallel reruns don't collide.
+    trial_id = f"{algo_slug}_{task_slug}_seed{seed}_{ts}"
     log_dir = NAUTILUS / "outputs" / trial_id
     log_dir.mkdir(parents=True, exist_ok=True)
     (log_dir / "curves").mkdir(parents=True, exist_ok=True)
+
+    # W&B run name drops the timestamp so the algo+seed pair is the readable label.
+    wandb_run_name = f"{algo_slug}_{task_slug}_seed{seed}"
 
     use_wandb = bool(cfg.get("wandb")) and cfg.get("wandb") not in ("null", "None", "")
     dl = DataLogger(
@@ -139,7 +145,7 @@ def main(cfg: DictConfig):
         log_tb=True,
         log_wandb=use_wandb,
         project=str(cfg.wandb) if use_wandb else None,
-        run_name=trial_id,
+        run_name=wandb_run_name,
         config=OmegaConf.to_container(cfg, resolve=True) if use_wandb else None,
     )
     dl.log_text("config", OmegaConf.to_yaml(cfg, resolve=True), step=0)
