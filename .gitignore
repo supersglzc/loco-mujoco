@@ -18,6 +18,9 @@ wandb/
 ckpts/
 outputs/
 multirun/
+nautilus/outputs/
+nautilus/rl-experiment/
+nautilus/rl_experiments/
 home/
 loco_mujoco/smpl/conf_paths.yaml
 data/

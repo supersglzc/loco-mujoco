@@ -13,7 +13,7 @@ algo: ppo
 task:
 
 # ---- Sim / device ----
-num_envs: 2048            # matches reference examples/training_examples/jax_rl/conf.yaml
+num_envs: 4096            # matches reference examples/training_examples/jax_rl/conf.yaml
 n_envs: ${.num_envs}      # alias used by SB3 path
 device: cuda
 sim_device: ${.device}
@@ -21,7 +21,7 @@ rl_device: ${.device}
 graphics_device_id: 0
 seed: 42
 gpu_sim: true
-total_timesteps: 100_000_000     # = 10e7, mirrors reference total_timesteps
+total_timesteps: 50_000_000     # = 10e7, mirrors reference total_timesteps
 max_step: ${.total_timesteps}   # custom_torch alias
 wandb:
 
@@ -45,7 +45,7 @@ n_steps: 50               # rollout horizon per iteration (custom_torch reads as
 horizon_len: ${.n_steps}
 batch_size: 32768
 n_epochs: 4
-n_minibatches: 32         # 8x more grad steps per outer iter than the old default of 4
+n_minibatches: 16         # 8x more grad steps per outer iter than the old default of 4
 update_times: ${.n_epochs}
 gamma: 0.99
 gae_lambda: 0.95
@@ -68,8 +68,8 @@ use_obs_rms: true          # in-network RunningMeanStd obs normalization; set fa
 # ---- ActorCriticBase shared ----
 actor_lr: ${.learning_rate}
 critic_lr: ${.learning_rate}
-obs_norm: true
-value_norm: true
+obs_norm: false
+value_norm: false
 handle_timeout: true
 tracker_len: 1000
 reward_scale: 1.0

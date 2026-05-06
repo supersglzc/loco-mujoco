@@ -149,7 +149,8 @@ def main(cfg: DictConfig):
     (log_dir / "curves").mkdir(parents=True, exist_ok=True)
 
     # W&B run name drops the timestamp so the algo+seed pair is the readable label.
-    wandb_run_name = f"{algo_slug}_{task_slug}_seed{seed}"
+    # Override via Hydra `wandb_run_name=<...>` (used by /nautilus:rl-tune to set v1, v2, ...).
+    wandb_run_name = str(cfg.get("wandb_run_name") or f"{algo_slug}_{task_slug}_seed{seed}")
 
     use_wandb = bool(cfg.get("wandb")) and cfg.get("wandb") not in ("null", "None", "")
     dl = DataLogger(
