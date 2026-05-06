@@ -14,7 +14,8 @@ seed: 42
 gpu_sim: true
 total_timesteps: 50_000_000
 max_step: ${.total_timesteps}   # custom_torch alias
-wandb:
+wandb: null
+wandb_run_name: null             # tooling-side override (rl-sweep, rl-tuning-agent set per-run); declared so Hydra struct-mode accepts plain overrides
 
 # ---- Env construction (custom_jax: passed to RLFactory.make as **env_params) ----
 normalize_env: false             # NormalizeVecReward — OFF for SAC (off-policy caveat below).
@@ -24,7 +25,7 @@ normalize_env: false             # NormalizeVecReward — OFF for SAC (off-polic
 env_params: {}                   # see ppo.parallel.yaml for shape
 
 # In-network observation RunningMeanStd for SAC actor + twin critics.
-use_obs_rms: true                 # set false to disable
+use_obs_rms: false                 # set false to disable
 
 # ---- Eval / render CLI knobs (used by eval.py / render.py; ignored by train.py) ----
 checkpoint:

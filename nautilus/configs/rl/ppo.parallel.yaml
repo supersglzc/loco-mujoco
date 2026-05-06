@@ -23,7 +23,8 @@ seed: 42
 gpu_sim: true
 total_timesteps: 50_000_000     # = 10e7, mirrors reference total_timesteps
 max_step: ${.total_timesteps}   # custom_torch alias
-wandb:
+wandb: null
+wandb_run_name: null             # tooling-side override (rl-sweep, rl-tuning-agent set per-run); declared so Hydra struct-mode accepts plain overrides
 
 # ---- Env construction (custom_jax: passed to RLFactory.make as **env_params) ----
 # Mirror the loco-mujoco reference at examples/training_examples/jax_rl/conf.yaml.
